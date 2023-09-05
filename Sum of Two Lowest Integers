@@ -1,0 +1,6 @@
+function sumTwoSmallestNumbers(nmbrs) {
+  let srtd = nmbrs.sort((function(a, b){return a - b}))
+  return srtd[0] + srtd[1] 
+}
+
+console.log(sumTwoSmallestNumbers([500,60,21,3]))
