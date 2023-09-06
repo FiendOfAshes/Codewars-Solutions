@@ -1,0 +1,7 @@
+function squareEveryDigit(n) {
+let cnvrt = new Array() //new array to push elements into
+("" + n).split("").map(i => { //n is converted to string then split so that each number is a separate string in cnvrt array
+cnvrt.push(i**2); //.map creates a new array and calls for each element in cnvrt to be exponentiated 
+})
+return parseInt(cnvrt.join("")) //.join returns cnvrt as a string and parseInt parses cnvrt and returns it as an integer
+}
