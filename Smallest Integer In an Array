@@ -1,0 +1,5 @@
+class fndSmllst {
+  smllstInt(args) {
+    return Math.min(...args)
+}
+}
