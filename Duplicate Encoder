@@ -1,0 +1,27 @@
+// a general solution
+function duplicateEncode(word) {
+let chrs = [...word.toLowerCase()];
+let dplct = chrs.filter((char, index, chrs) => chrs.indexOf(char) !== index);
+let dplctTwo = new Set(dplct); 
+let unq = [...dplctTwo];
+let rslt = "";
+  for (let i=0, n = chrs.length; i < n; ++i ) {
+    if(unq.includes(chrs[i])) {
+      rslt += ")";
+    } else {
+      rslt += "(";
+      }
+    }
+    return rslt;
+}
+
+// a better solution#1 
+function duplicateEncode(word){
+  return word
+    .toLowerCase()
+    .split('')
+    .map( function (a, i, w) {
+      return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+    })
+    .join('');
+}
