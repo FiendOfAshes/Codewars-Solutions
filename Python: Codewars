@@ -1,0 +1,14 @@
+#Grasshopper-Summation
+def summation(num):
+    return sum(range(1, num + 1))
+
+#Maximum & Minmum Values of a List
+def minimum(arr):
+    return min(arr)
+
+def maximum(arr):
+    return max(arr)
+
+#Abbreviate a two word name
+def abbrvt(name):
+   return ".".join(w[0] for w in name.split()).upper()
