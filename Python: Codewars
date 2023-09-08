@@ -12,3 +12,21 @@ def maximum(arr):
 #Abbreviate a two word name
 def abbrvt(name):
    return ".".join(w[0] for w in name.split()).upper()
+
+    #Another solution
+     def abbrevName(name):
+    first, last = name.upper().split(' ')
+    return first[0] + '.' + last[0]
+
+#Sum Mixed Array
+def sm_mx(arr):
+   return sum(map(int, arr))
+
+#Square(n)Sum
+def sqr_sm(numbers)
+return sum(x**2 for x in numbers)
+
+#print sum of every digit in a number
+
+
+#reversed strings
