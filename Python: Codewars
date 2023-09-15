@@ -23,17 +23,24 @@ def sm_mx(arr):
    return sum(map(int, arr))
 
 #Square(n)Sum
-def sqr_sm(numbers)
+def sqr_sm(numbers):
    return sum(x**2 for x in numbers)
 
 #print sum of every digit in a number
 
 
 #reversed strings
-def solution(string)
+def solution(string):
     return string[::-1]
 
 #are you playing banjo?
 def areYouPlayingBanjo(name):
     return "{} plays banjo".format(name) if name.startswith("R") or name.startswith("r") else "{} does not play banjo".format(name)
 
+#L1: Set Alarm
+def set_alarm(employed, vacation):
+    return True if employed and not vacation else False
+
+#count of positives/sum of negatives
+def sum_count(arr):
+    return [lem([i for i in arr if i > 0]), sum([i for i in arr if i > 0])] if len(arr) != 0 else [] 
