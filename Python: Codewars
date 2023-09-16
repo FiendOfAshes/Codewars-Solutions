@@ -43,4 +43,20 @@ def set_alarm(employed, vacation):
 
 #count of positives/sum of negatives
 def sum_count(arr):
-    return [lem([i for i in arr if i > 0]), sum([i for i in arr if i > 0])] if len(arr) != 0 else [] 
+    return [lem([i for i in arr if i > 0]), sum([i for i in arr if i > 0])] if len(arr) != 0 else []
+
+#opposites_attract
+def lovefunc(flower1, flower2):
+    if flower1%2 == 0 and flower2%2 == 0 or flower1%2 != 0 and flower2%2 != 0:
+        return False 
+    else:
+        return True
+
+#grasshopper-personalised_message
+def greet(name, owner):
+    if name == owner:
+        return "Hello boss"
+    else:
+        return "Hello guest"
+
+#convert_string_to_camelCase
