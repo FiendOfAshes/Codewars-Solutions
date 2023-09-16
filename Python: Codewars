@@ -60,3 +60,9 @@ def greet(name, owner):
         return "Hello guest"
 
 #convert_string_to_camelCase
+def camelcase(txt):
+    txt = txt.replace("-", "").replace("_", "")
+    wrds = txt.split
+    return "".join([c.capitalize() if c != wrds[0] else c for c in wrds])
+
+                                       
