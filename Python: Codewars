@@ -26,7 +26,7 @@ def sm_mx(arr):
 def sqr_sm(numbers):
    return sum(x**2 for x in numbers)
 
-#print sum of every digit in a number
+#sum every digit in a number
 
 
 #reversed strings
