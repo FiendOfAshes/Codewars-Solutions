@@ -9,12 +9,10 @@ def end_string(x, y):
         return False
 
 
-# examples:
+# examples and tests:
 assert end_string("sumo", "umo") is True, "Should be true"
 assert end_string("sumo", "omo") is False, "Should be false"
 assert end_string("zebra", "eb") is False, "Should be false"
 assert end_string("ails", "fails") is False, "Should be false"
 assert end_string("fails", "ails") is True, "Should be true"
 assert end_string("abc", "abcd") is False, "Should be false"
-
-print(end_string("sumo", "umo"))
